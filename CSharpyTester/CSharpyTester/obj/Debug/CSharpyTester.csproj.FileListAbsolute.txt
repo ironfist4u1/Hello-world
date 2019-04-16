@@ -1,0 +1,7 @@
+E:\Code\CSharpyTester\CSharpyTester\bin\Debug\CSharpyTester.exe.config
+E:\Code\CSharpyTester\CSharpyTester\bin\Debug\CSharpyTester.exe
+E:\Code\CSharpyTester\CSharpyTester\bin\Debug\CSharpyTester.pdb
+E:\Code\CSharpyTester\CSharpyTester\obj\Debug\CSharpyTester.csprojAssemblyReference.cache
+E:\Code\CSharpyTester\CSharpyTester\obj\Debug\CSharpyTester.csproj.CoreCompileInputs.cache
+E:\Code\CSharpyTester\CSharpyTester\obj\Debug\CSharpyTester.exe
+E:\Code\CSharpyTester\CSharpyTester\obj\Debug\CSharpyTester.pdb
