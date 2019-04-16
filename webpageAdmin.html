@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Admin Page </title>
+</head>
+
+<h2 align="center">Lambda Admin Script</h2>
+
+<h3><a href="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create?input=readStatus">Read Status</a></h3>
+<h3><a href="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create?input=readControlU">Read ControlU</a></h3>
+<h3><a href="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create?input=readAuth">Read Auth</a></h3>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Styling tabs */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Styling tab contents */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#updateStatus {background-color: #003D79;}
+#updatecontrolU {background-color: #6DB33F;}
+#deleteStatus {background-color: #0095D3;}
+#deletecontrolU {background-color: #387C2C;}
+#rdsConfig {background-color: #C3CD23;}
+#rdsConfigSelf {background-color: #89CBDF;}
+#urlConfig {background-color: #006990;}
+#deleteAuth{background-color: #387C2C;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('updateStatus', this, '#003D79')">updateStatus</button>
+<button class="tablink" onclick="openPage('updatecontrolU', this, '#003D79')">updatecontrolU</button>
+<button class="tablink" onclick="openPage('deleteStatus', this, '#0095D3')">deleteStatus</button>
+<button class="tablink" onclick="openPage('deletecontrolU', this, '#387C2C')">deleteControlU</button>
+<button class="tablink" onclick="openPage('rdsConfig', this, '#C3CD23')">rdsConfig</button>
+<button class="tablink" onclick="openPage('rdsConfigSelf', this, '#89CBDF')">rdsConfigSelf</button>
+<button class="tablink" onclick="openPage('urlConfig', this, '#006990')">urlConfig</button>
+<button class="tablink" onclick="openPage('deleteAuth', this, '#387C2C')">deleteAuth</button>
+
+
+<div id="updateStatus" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="updateStatus" readonly><br>
+  <br>
+  Username:<br>
+  <input type="text" name="whoami">
+  <br>
+  Version:<br>
+  <input type="text" name="version">
+  <br>
+  Button pressed:<br>
+  <input type="text" name="button">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+
+
+<div id="updatecontrolU" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="updatecontrolU" readonly><br>
+  Title:<br>
+  <input type="text" name="title">
+  <br>
+  Version:<br>
+  <input type="text" name="version">
+  <br>
+  Message:<br>
+  <input type="text" name="message">
+  <br>
+  Link:<br>
+  <input type="text" name="link">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+<div id="deleteStatus" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="deleteStatus" readonly><br>
+  <br>
+  Username:<br>
+  <input type="text" name="whoami">
+  <br>
+  Version:<br>
+  <input type="text" name="version">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+
+<div id="deletecontrolU" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="deletecontrolU" readonly><br>
+  <br>
+  Title:<br>
+  <input type="text" name="title">
+  <br>
+  Version:<br>
+  <input type="text" name="version">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+<div id="rdsConfig" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="rdsConfig" readonly><br>
+  <br>
+  Username:<br>
+  <input type="text" name="user">
+  <br>
+  Password:<br>
+  <input type="text" name="password">
+  <br>
+  DBname:<br>
+  <input type="text" name="DBname">
+  <br>
+  Link:<br>
+  <input type="text" name="link">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+
+<div id="rdsConfigSelf" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="rdsConfigSelf" readonly><br>
+  <br>
+  Username:<br>
+  <input type="text" name="user">
+  <br>
+  Password:<br>
+  <input type="text" name="password">
+  <br>
+  DBname:<br>
+  <input type="text" name="DBname">
+  <br>
+  Link:<br>
+  <input type="text" name="link">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+<div id="urlConfig" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="urlConfig" readonly><br>
+  <br>
+  Get link:<br>
+  <input type="text" name="get">
+  <br>
+  Post link:<br>
+  <input type="text" name="post">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+<div id="deleteAuth" class="tabcontent">
+  <form action="https://x7eqyqw34m.execute-api.us-west-2.amazonaws.com/dev/users/create">
+  Input <input type="text" name="input" value="deleteAuth" readonly><br>
+  <br>
+  Username:<br>
+  <input type="text" name="whoami">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
