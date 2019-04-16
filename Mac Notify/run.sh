@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+cd /Library/VMware/Notify/resources
+python /Library/VMware/Notify/resources/testing-pync.py > output.txt
+
+#mkfifo /tmp/Notify
+#pipe=/tmp/Notify
+
+#cd /Library/VMware/Notify/resources > $pipe
+#python /Library/VMware/Notify/resources/testing-pync.py > $pipe
+#echo 'hello' > $pipe
+#exit >$pipe
+
+#rm /tmp/Notify
+
+
+
