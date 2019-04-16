@@ -1,0 +1,19 @@
+service: aws-python # NOTE: update this with your service name
+
+
+
+provider:
+  name: aws
+  runtime: python2.7
+  region: us-west-2
+
+
+functions:
+  admin:
+    handler: admin.controller
+    events:
+      - http:
+          path: users/create
+          method: get
+
+
