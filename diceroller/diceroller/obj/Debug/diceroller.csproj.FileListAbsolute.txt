@@ -1,0 +1,10 @@
+E:\Code\diceroller\diceroller\bin\Debug\diceroller.exe.config
+E:\Code\diceroller\diceroller\bin\Debug\diceroller.exe
+E:\Code\diceroller\diceroller\bin\Debug\diceroller.pdb
+E:\Code\diceroller\diceroller\obj\Debug\diceroller.csprojAssemblyReference.cache
+E:\Code\diceroller\diceroller\obj\Debug\diceroller.Form1.resources
+E:\Code\diceroller\diceroller\obj\Debug\diceroller.Properties.Resources.resources
+E:\Code\diceroller\diceroller\obj\Debug\diceroller.csproj.GenerateResource.cache
+E:\Code\diceroller\diceroller\obj\Debug\diceroller.csproj.CoreCompileInputs.cache
+E:\Code\diceroller\diceroller\obj\Debug\diceroller.exe
+E:\Code\diceroller\diceroller\obj\Debug\diceroller.pdb
